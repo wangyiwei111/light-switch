@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灯泡开关</title>
+    <style>
+        #bulb{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            background:#888;
+            margin:20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>灯泡开关</h1>
+    <div id="bulb"></div>
+    <button onclick="toggleLight()">开灯/关灯</button>
+    <script>
+        let isOn = false
+        let bulb = document.getElementById('bulb')
+        function toggleLight(){
+            if(isOn){
+                bulb.style.background="#888"
+                isOn = false
+            }else{
+                bulb.style.background="#ffdd00"
+                isOn = true
+            }
+        }
+    </script>
+</body>
+</html>
